@@ -11,7 +11,7 @@ function App() {
       setErrMessage('')
     }
   }
-  const decrementCount = () => count <= 0 ? setErrMessage('The counter can not go below zero') : setCount(count - 1)
+  const decrementCount = () => count <= -1 ? setErrMessage('The counter can not go below zero') : setCount(count - 1)
 
   return (
     <div className="app-container">
